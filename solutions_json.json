@@ -1,0 +1,738 @@
+{
+  "inventory": [
+    "exact",
+    "elt",
+    "[anonymous]",
+    "sub",
+    "have",
+    "intro",
+    "imp",
+    "sub_ref",
+    "sub_trans",
+    "by_contra",
+    "not",
+    "rfl",
+    "comp_def",
+    "comp",
+    "iff",
+    "rewrite",
+    "rw",
+    "comp_sub_of_sub",
+    "apply",
+    "comp_comp",
+    "sub_antisymm",
+    "constructor",
+    "Iff.intro",
+    "and",
+    "inter_def",
+    "inter",
+    "And.intro",
+    "inter_sub_swap",
+    "inter_comm",
+    "ext",
+    "inter_assoc",
+    "Or.inl",
+    "Or.inr",
+    "or",
+    "union_def",
+    "union",
+    "cases'",
+    "union_sub_swap",
+    "union_comm",
+    "left",
+    "right",
+    "union_assoc",
+    "comp_union",
+    "comp_inter",
+    "inter_distrib_over_union",
+    "union_distrib_over_inter",
+    "fam_inter_def",
+    "all",
+    "famint",
+    "pair_def",
+    "by_cases",
+    "Exists.intro",
+    "ex",
+    "use",
+    "fam_union_def",
+    "famunion",
+    "obtain",
+    "set_builder_def",
+    "single_def"
+  ],
+  "openedIntro": true,
+  "data": {
+    "Subset": {
+      "1": {
+        "code": "exact h",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 1,
+            "positionColumn": 8
+          }
+        ],
+        "help": []
+      },
+      "2": {
+        "code": "exact h1 h2",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 1,
+            "positionColumn": 12
+          }
+        ],
+        "help": []
+      },
+      "3": {
+        "code": "exact h2 (h1 h3)",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 1,
+            "positionColumn": 17
+          }
+        ],
+        "help": []
+      },
+      "4": {
+        "code": "intro h3\nexact h2 (h1 h3)",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 2,
+            "selectionStartColumn": 17,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "5": {
+        "code": "intro a\nintro h\nexact h",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 3,
+            "selectionStartColumn": 8,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "6": {
+        "code": "intro x\nintro h3\nexact h2 (h1 h3)",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 3,
+            "selectionStartColumn": 17,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      }
+    },
+    "Complement": {
+      "1": {
+        "code": "by_contra h3\nexact h2 (h3 h1)",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 2,
+            "selectionStartColumn": 17,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "2": {
+        "code": "rfl",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 4,
+            "positionLineNumber": 1,
+            "positionColumn": 4
+          }
+        ],
+        "help": []
+      },
+      "3": {
+        "code": "intro x h2\nrw [comp_def x A]\nrw [comp_def x B] at h2\nby_contra h3\nexact h2 (h1 h3)",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 5,
+            "selectionStartColumn": 17,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "4": {
+        "code": "apply sub_antisymm\n· intro x h\n  rw [comp_def] at h\n  by_contra h1\n  apply h\n  exact h1\n· intro x h\n  rw [comp_def]\n  by_contra h1\n  exact h1 h\n",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 10,
+            "selectionStartColumn": 13,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "5": {
+        "code": "apply Iff.intro\n· intro h\n  apply comp_sub_of_sub\n  exact h\n· intro h\n  apply comp_sub_of_sub at h\n  rw [comp_comp, comp_comp] at h\n  exact h",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 8,
+            "selectionStartColumn": 10,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      }
+    },
+    "Intersection": {
+      "1": {
+        "code": "exact h.left",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 13,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "2": {
+        "code": "exact h.right",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 1,
+            "positionColumn": 14
+          }
+        ],
+        "help": []
+      },
+      "3": {
+        "code": "intro x h\nexact h.left",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 2,
+            "selectionStartColumn": 13,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "4": {
+        "code": "exact And.intro h1 h2",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 1,
+            "positionColumn": 22
+          }
+        ],
+        "help": []
+      },
+      "5": {
+        "code": "intro x h\nexact And.intro (h1 h) (h2 h)",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 2,
+            "selectionStartColumn": 30,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "6": {
+        "code": "intro x h\nexact And.intro h.right h.left",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 2,
+            "selectionStartColumn": 31,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "7": {
+        "code": "apply sub_antisymm\n· exact inter_sub_swap A B\n· exact inter_sub_swap B A",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 3,
+            "selectionStartColumn": 27,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "8": {
+        "code": "ext x\napply Iff.intro\n· intro h\n  exact And.intro h.left.left (And.intro h.left.right h.right)\n· intro h\n  exact And.intro (And.intro h.left h.right.left) h.right.right",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 6,
+            "selectionStartColumn": 64,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      }
+    },
+    "Union": {
+      "1": {
+        "code": "exact Or.inl h",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 1,
+            "positionColumn": 15
+          }
+        ],
+        "help": []
+      },
+      "2": {
+        "code": "intro x h\nexact Or.inr h",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 2,
+            "selectionStartColumn": 15,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "3": {
+        "code": "intro x h3\ncases' h3 with h3A h3B\n· exact h1 h3A\n· exact h2 h3B\n",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 2,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 2,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "4": {
+        "code": "intro x h\ncases' h with hA hB\n· exact Or.inr hA\n· exact Or.inl hB",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 4,
+            "selectionStartColumn": 18,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "5": {
+        "code": "apply sub_antisymm\n· exact union_sub_swap A B\n· exact union_sub_swap B A",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 3,
+            "selectionStartColumn": 27,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "6": {
+        "code": "ext x\napply Iff.intro\n· intro h\n  cases' h with hAB hC\n  · cases' hAB with hA hB\n    · exact Or.inl hA\n    · exact Or.inr (Or.inl hB)\n  · exact Or.inr (Or.inr hC)\n· intro h\n  cases' h with hA hBC\n  · exact Or.inl (Or.inl hA)\n  · cases' hBC with hB hC\n    · exact Or.inl (Or.inr hB)\n    · exact Or.inr hC",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 14,
+            "selectionStartColumn": 22,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      }
+    },
+    "Combination": {
+      "1": {
+        "code": "ext x\napply Iff.intro\n· intro h\n  rw [comp_def, union_def] at h\n  rw [inter_def]\n  apply And.intro\n  · by_contra h'\n    apply h\n    apply Or.inl\n    rw [comp_def] at h'\n    by_contra h''\n    exact h' h''\n  · by_contra h'\n    apply h\n    apply Or.inr\n    rw [comp_def] at h'\n    by_contra h''\n    exact h' h''\n· intro h\n  rw [comp_def, union_def]\n  rw [inter_def] at h\n  by_contra h'\n  cases' h' with hA hB\n  · apply h.left\n    exact hA\n  · apply h.right\n    exact hB\n",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 28,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 28,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "2": {
+        "code": "rw [← comp_comp (Aᶜ ∪ Bᶜ), comp_union, comp_comp, comp_comp]",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 1,
+            "positionColumn": 61
+          }
+        ],
+        "help": []
+      },
+      "3": {
+        "code": "ext\napply Iff.intro\n· intro h\n  have hA : x ∈ A := h.left\n  have hBC : x ∈ B ∪ C := h.right\n  cases' hBC with hB hC\n  · apply Or.inl (And.intro hA hB)\n  · apply Or.inr (And.intro hA hC)\n· intro h\n  cases' h with hAB hAC\n  · exact And.intro hAB.left (Or.inl hAB.right)\n  · exact And.intro hAC.left (Or.inr hAC.right)",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 12,
+            "selectionStartColumn": 48,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "4": {
+        "code": "rw [← comp_comp (A ∪ B ∩ C), comp_union, comp_inter B C]\nrw [inter_distrib_over_union, comp_union, comp_inter, comp_inter]\nrw [comp_comp, comp_comp, comp_comp]",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 3,
+            "selectionStartColumn": 37,
+            "positionLineNumber": 3,
+            "positionColumn": 37
+          }
+        ],
+        "help": []
+      },
+      "5": {
+        "code": "intro x h3\nhave h4 : x ∈ A ∪ C := Or.inl h3\nhave h5 : x ∈ B ∪ C := h1 h4\ncases' h5 with hB hC\n· exact hB\n· have h6 : x ∈ A ∩ C := And.intro h3 hC\n  have h7 : x ∈ B ∩ C := h2 h6\n  exact h7.left",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 8,
+            "selectionStartColumn": 16,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": [
+          5
+        ]
+      }
+    },
+    "FamInter": {
+      "1": {
+        "code": "intro x h2\nrw [fam_inter_def x F] at h2\nexact h2 A h1",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 3,
+            "selectionStartColumn": 14,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "2": {
+        "code": "intro x h2\nrw [fam_inter_def] at h2\nrw [fam_inter_def]\nintro S h3\nhave h4 : S ∈ G := h1 h3\nexact h2 S h4",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 6,
+            "selectionStartColumn": 14,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "3": {
+        "code": "ext x\napply Iff.intro\n· intro h\n  rw [fam_inter_def]\n  intro S h'\n  rw [pair_def S A B] at h'\n  cases' h' with hA hB\n  · rw [hA]\n    exact h.left\n  · rw [hB]\n    exact h.right\n· intro h\n  rw [fam_inter_def] at h\n  have h1 : A ∈ {A, B} := by\n    rw [pair_def A A B]\n    apply Or.inl\n    rfl\n  have hA : x ∈ A := h A h1\n  have h2 : B ∈ {A, B} := by\n    rw [pair_def B A B]\n    apply Or.inr\n    rfl\n  have hB : x ∈ B := h B h2\n  exact And.intro hA hB",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 24,
+            "selectionStartColumn": 24,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "4": {
+        "code": "ext\napply Iff.intro\n· intro h\n  rw [fam_inter_def] at h\n  apply And.intro\n  · rw [fam_inter_def]\n    intro S h'\n    have hu : S ∈ F ∪ G := Or.inl h'\n    exact h S hu\n  · rw [fam_inter_def]\n    intro S h'\n    have hu : S ∈ F ∪ G := Or.inr h'\n    exact h S hu\n· intro h\n  rw [fam_inter_def]\n  intro S h'\n  cases' h' with hF hG\n  · exact h.left S hF\n  · exact h.right S hG\n",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 19,
+            "selectionStartColumn": 23,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "5": {
+        "code": "apply Iff.intro\n· intro h1\n  intro B h2\n  intro x h3\n  exact (h1 h3) B h2\n· intro h1\n  intro x h2\n  rw [fam_inter_def]\n  intro S h3\n  exact (h1 S h3) h2",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 10,
+            "selectionStartColumn": 21,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "6": {
+        "code": "intro x h2\nrw [fam_inter_def] at h2\nby_cases h3 : x ∈ A\n· exact Or.inl h3\n· apply Or.inr\n  intro S h\n  have h4 : x ∈ A ∪ S := h2 (A ∪ S) (h1 S h)\n  cases' h4 with hA hS\n  · by_contra\n    apply h3\n    exact hA\n  · exact hS",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 12,
+            "selectionStartColumn": 13,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      }
+    },
+    "FamUnion": {
+      "1": {
+        "code": "apply Exists.intro A\nexact sub_ref A",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 2,
+            "selectionStartColumn": 16,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "2": {
+        "code": "intro x h2\nrw [fam_union_def x F]\napply Exists.intro A\nexact And.intro h1 h2",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 4,
+            "selectionStartColumn": 22,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "3": {
+        "code": "intro x h2\nrw [fam_union_def] at h2\nrw [fam_union_def]\nobtain ⟨S, h3⟩ := h2\napply Exists.intro S\nexact And.intro (h1 h3.left) h3.right",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 6,
+            "selectionStartColumn": 38,
+            "positionLineNumber": 6,
+            "positionColumn": 38
+          }
+        ],
+        "help": []
+      },
+      "4": {
+        "code": "ext x\napply Iff.intro\n· intro h1\n  rw [fam_union_def]\n  cases' h1 with hA hB\n  · apply Exists.intro A\n    apply And.intro _ hA\n    rw [pair_def]\n    apply Or.inl\n    rfl\n  · apply Exists.intro B\n    apply And.intro _ hB\n    rw [pair_def]\n    apply Or.inr\n    rfl\n· intro h1\n  rw [fam_union_def] at h1\n  obtain ⟨S, h2⟩ := h1\n  rw [pair_def] at h2\n  cases' h2.left with hA hB\n  · apply Or.inl\n    rw [← hA]\n    exact h2.right\n  · apply Or.inr\n    rw [← hB]\n    exact h2.right",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 26,
+            "selectionStartColumn": 19,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "5": {
+        "code": "ext x\napply Iff.intro\n· intro h1\n  rw [fam_union_def] at h1\n  obtain ⟨S, h2⟩ := h1\n  cases' h2.left with hF hG\n  · apply Or.inl\n    rw [fam_union_def]\n    apply Exists.intro S\n    exact And.intro hF h2.right\n  · apply Or.inr\n    rw [fam_union_def]\n    apply Exists.intro S\n    exact And.intro hG h2.right\n· intro h1\n  rw [fam_union_def]\n  cases' h1 with hF hG\n  · rw [fam_union_def] at hF\n    obtain ⟨S, h1⟩ := hF\n    apply Exists.intro S\n    exact And.intro (Or.inl h1.left) h1.right\n  · rw [fam_union_def] at hG\n    obtain ⟨S, h1⟩ := hG\n    apply Exists.intro S\n    exact And.intro (Or.inr h1.left) h1.right",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 25,
+            "positionColumn": 46
+          }
+        ],
+        "help": []
+      },
+      "6": {
+        "code": "apply Iff.intro\n· intro h1\n  intro B h2\n  intro x h3\n  have h4 : x ∈ ⋃₀ F := by\n    rw [fam_union_def]\n    apply Exists.intro B\n    exact And.intro h2 h3\n  exact h1 h4\n· intro h1\n  intro x h2\n  rw [fam_union_def] at h2\n  obtain ⟨S, h3⟩ := h2\n  exact (h1 S h3.left) h3.right",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 14,
+            "positionColumn": 32
+          }
+        ],
+        "help": []
+      },
+      "7": {
+        "code": "ext x\napply Iff.intro\n· intro h1\n  have h2 : x ∈ ⋃₀ F := h1.right\n  rw [fam_union_def] at h2\n  obtain ⟨S, h3⟩ := h2\n  rw [fam_union_def]\n  apply Exists.intro (A ∩ S)\n  apply And.intro\n  · rw [set_builder_def]\n    apply Exists.intro S\n    apply And.intro h3.left\n    rfl\n  · exact And.intro h1.left h3.right\n· intro h1\n  rw [fam_union_def] at h1\n  obtain ⟨X, h2⟩ := h1\n  rw [set_builder_def] at h2\n  obtain ⟨S, h3⟩ := h2.left\n  apply And.intro\n  · rw [h3.right] at h2\n    exact h2.right.left\n  · rw [fam_union_def]\n    apply Exists.intro S\n    rw [h3.right] at h2\n    exact And.intro h3.left h2.right.right",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 21,
+            "selectionStartColumn": 24,
+            "positionLineNumber": 21,
+            "positionColumn": 24
+          }
+        ],
+        "help": []
+      }
+    },
+    "FamCombo": {
+      "1": {
+        "code": "ext x\napply Iff.intro\n· intro h1\n  rw [comp_def, fam_union_def] at h1\n  rw [fam_inter_def]\n  intro S h2\n  rw [set_builder_def] at h2\n  by_contra h3\n  apply h1\n  apply Exists.intro Sᶜ\n  exact And.intro h2 h3\n· intro h1\n  rw [comp_def]\n  rw [fam_inter_def] at h1\n  by_contra h2\n  rw [fam_union_def] at h2\n  obtain ⟨S, h3⟩ := h2\n  have h4 : Sᶜ ∈ {A | Aᶜ ∈ F} := by\n    rw [set_builder_def, comp_comp]\n    exact h3.left\n  have h5 : x ∈ Sᶜ := h1 Sᶜ h4\n  apply h5\n  exact h3.right\n  \n",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 18,
+            "selectionStartColumn": 36,
+            "positionLineNumber": 18,
+            "positionColumn": 36
+          }
+        ],
+        "help": []
+      },
+      "2": {
+        "code": "ext x\napply Iff.intro\n· intro h1\n  rw [comp_def, fam_inter_def] at h1\n  rw [fam_union_def]\n  by_contra h2\n  apply h1\n  intro S h3\n  by_contra h4\n  apply h2\n  apply Exists.intro Sᶜ\n  apply And.intro _ h4\n  rw [set_builder_def, comp_comp]\n  exact h3\n· intro h1\n  rw [fam_union_def] at h1\n  obtain ⟨S, h2⟩ := h1\n  rw [set_builder_def] at h2\n  rw [comp_def, fam_inter_def]\n  by_contra h3\n  have h4 : x ∈ Sᶜ := h3 Sᶜ h2.left\n  exact h4 h2.right\n\n",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 24,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "3": {
+        "code": "intro x h2\nhave h3 := h2.left\nrw [fam_union_def] at h3\nobtain ⟨S, h4⟩ := h3\nobtain ⟨S', h5⟩ := h1 S h4.left\nrw [fam_union_def]\napply Exists.intro (S ∩ S')\napply And.intro h5.right\napply And.intro h4.right\nhave h3 := h2.right\nrw [fam_inter_def] at h3\nexact h3 S' h5.left",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 10,
+            "selectionStartColumn": 20,
+            "positionLineNumber": 10,
+            "positionColumn": 20
+          }
+        ],
+        "help": []
+      },
+      "4": {
+        "code": "intro x h1\nrw [fam_union_def]\nhave h2 := h1.left\nrw [fam_union_def] at h2\nobtain ⟨S, h2⟩ := h2\nhave h3 := h1.right\nrw [comp_def, fam_union_def] at h3\nhave h4 : S ∈ Gᶜ := by\n  rw [comp_def]\n  by_contra h4\n  apply h3\n  apply Exists.intro S\n  exact And.intro h4 h2.right\napply Exists.intro S\napply And.intro\n· exact And.intro h2.left h4\n· exact h2.right\n",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 1,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 18,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "5": {
+        "code": "intro x h2\nrw [fam_union_def]\nhave h3 := h2.left\nrw [fam_union_def] at h3\nobtain ⟨S, h3⟩ := h3\nhave h4 : S ∈ G := by\n  by_contra h4\n  have h5 : S ∈ F ∩ Gᶜ := And.intro h3.left h4\n  have h6 : x ∈ ⋃₀ (F ∩ Gᶜ) := by\n    rw [fam_union_def]\n    apply Exists.intro S\n    exact And.intro h5 h3.right\n  have h7 : x ∈ ⋃₀ F ∩ (⋃₀ G)ᶜ := h1 h6\n  apply h7.right\n  exact h2.right\napply Exists.intro S\napply And.intro\n· exact And.intro h3.left h4\n· exact h3.right\n",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 20,
+            "selectionStartColumn": 1,
+            "positionLineNumber": 1,
+            "positionColumn": 1
+          }
+        ],
+        "help": []
+      },
+      "6": {
+        "code": "intro x h1\nrw [fam_union_def]\nhave h2 := h1.left\nrw [fam_union_def] at h2\nobtain ⟨A, h2⟩ := h2\nhave h3 := h1.right\nrw [comp_def, fam_inter_def] at h3\nhave h4 : ∃ B ∈ G, x ∈ Bᶜ := by\n  by_contra h4\n  apply h3\n  intro B h5\n  by_contra h6\n  apply h4\n  apply Exists.intro B\n  exact And.intro h5 h6\nobtain ⟨B, h4⟩ := h4\napply Exists.intro (A ∩ Bᶜ)\napply And.intro\n· rw [set_builder_def]\n  apply Exists.intro A\n  apply And.intro h2.left\n  apply Exists.intro B\n  apply And.intro h4.left\n  rfl\n· exact And.intro h2.right h4.right",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 25,
+            "selectionStartColumn": 36,
+            "positionLineNumber": 25,
+            "positionColumn": 36
+          }
+        ],
+        "help": []
+      },
+      "7": {
+        "code": "have h2 := h1 {S | ∃ x ∈ A, S = {x}}\nhave h3 : ⋃₀ {S | ∃ x ∈ A, S = {x}} = A := by\n  ext x\n  apply Iff.intro\n  · intro h\n    rw [fam_union_def] at h\n    obtain ⟨S, h3⟩ := h\n    rw [set_builder_def] at h3\n    obtain ⟨y, h4⟩ := h3.left\n    have h5 : x = y := by\n      rw [h4.right, single_def] at h3\n      exact h3.right\n    rw [h5]\n    exact h4.left\n  · intro h3\n    rw [fam_union_def]\n    apply Exists.intro {x}\n    rw [set_builder_def]\n    apply And.intro\n    · apply Exists.intro x\n      apply And.intro h3\n      rfl\n    · rw [single_def]\nhave h4 : A ∈ {S | ∃ x ∈ A, S = {x}} := h2 h3\nrw [set_builder_def] at h4\nobtain ⟨x, h4⟩ := h4\napply Exists.intro x\nexact h4.right",
+        "completed": true,
+        "selections": [
+          {
+            "selectionStartLineNumber": 28,
+            "selectionStartColumn": 15,
+            "positionLineNumber": 28,
+            "positionColumn": 15
+          }
+        ],
+        "help": [
+          0
+        ]
+      }
+    }
+  },
+  "difficulty": 2,
+  "typewriterMode": false
+}
